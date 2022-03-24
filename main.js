@@ -1,44 +1,29 @@
 //Seleccionar al nodo padre
-elementoPadre = document.querySelector('.padre');
+const elementoPadre = document.querySelector('.padre');
 
 //Crear el nodo hijo
-parrafoCuatro = document.createElement('p');
+const parrafoCuatro = document.createElement('p');
 parrafoCuatro.innerHTML = 'Párrafo 4';
 
 //Agregar el nodo hijo al padre
-elementoPadre.appendChild(parrafoCuatro)
+// elementoPadre.appendChild(parrafoCuatro);
 
 //ELIMINAR
 
-let parrafoUno = document.querySelector('#parrafo1');
-let parrafoDos = document.querySelector('#parrafo2');
+const parrafoUno = document.querySelector('#parrafo1');
+const parrafoDos = document.querySelector('#parrafo2');
+const parrafoTres = document.querySelector('#parrafo3');
 
 //RemoveChild
-// elementoPadre.removeChild(parrafoUno);
+elementoPadre.removeChild(parrafoUno);
 
 //Remove
 parrafoDos.remove();
 
-//Replace
-elementoPadre.replaceChild(parrafoDos, parrafoCuatro);
+//ReplaceChild
+elementoPadre.replaceChild(parrafoCuatro, parrafoTres);
 
-
-/*
-btnBorrar = document.querySelector('button');
-
-//Elimina elementos:
-
-elementoPadre.removeChild(parrafoUno);
-
-
-function erase(){
-    // console.log(elementoPadre)
-    elementoPadre.removeChild(parrafoUno);
-}
-
-
-btnBorrar.addEventListener('click', ()=>{
-    
+//EVENT LISTENERS
+parrafoCuatro.addEventListener('click', ()=>{
+    parrafoCuatro.innerHTML = 'Nuevo Texto';
 });
-
-*/
