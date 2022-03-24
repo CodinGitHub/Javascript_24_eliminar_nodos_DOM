@@ -1,1 +1,1 @@
-# Javascript_24_eliminar_nodos_DOM
+# Javascript_23_atributos_propiedades_DOM
